@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/ce896e89d2.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Materialize-->
+        <link href="//themes.materializecss.com/cdn/shop/t/1/assets/admin-materialize.min.css?v=88505356707424191531528497992" rel="stylesheet">
+        <title>ACTIVITIES</title>
+    </head>
+
+<body class="has-fixed-sidenav">
+        <!-- NAVRBAR -->
+  <header>
+    <div class="navbar-fixed">
+      <nav class="navbar white">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo " style="margin-top: 5px;"><img src="images/LOGO.png" alt=""></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a class="dropdown-trigger" data-target="dropdown2" href="#"><i class="fa-solid fa-bell blue-text"></i></a></li>
+              <ul id="dropdown2" class="dropdown-content text-center">
+                <li><a href="#!">New Message<span class="new badge">4</span></a></li>
+                <li><a href="#!">Deadline of Submission<span class="new badge red">1</span></a></li>
+              </ul>
+              <ul id="dropdown1" class="dropdown-content">
+                <li><a target="_blank" href="settings.html">Setings</a></li>
+                <li><a href="index.html">Logout</a></li>
+              </ul>
+              <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"> <i class="fa-solid fa-user blue-text"></i></li>
+            </ul>
+            <a href="" class="sidenav-trigger" data-target="mobile-demo"><i class="fa-solid fa-bars blue-text"></i></a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <ul class="sidenav sidenav-fixed blue s6 m3 l3" id="mobile-demo"  style="background-color: #343a40;">
+    <li>
+      <div class="user-view">
+        <!-- <div class="background">
+          <img src="images/office2.jpg">
+        </div> -->
+          <a href="#user"><img class="circle" src="images/pearl.png"></a>
+          <a href="#name"><span class="name white-text">Pearl Cheed</span></a>
+          <a href="#email"><span class="email white-text">canetepearlcheed@gmail.com</span></a>
+      </div>
+    </li>
+    <li><div class="divider"></div></li>
+    <li><div class="collapsible-header"><a href="dashboard.html" class="white-text" type="submit"> <i class="fa-solid fa-gauge white-text"></i>Dashboard</a></div></li>
+    <li ><div class="collapsible-header"><a href="profile.html" class="white-text" type="submit"> <i class="fa-regular fa-user white-text"></i>Profile</a></div></li>
+    <li class="active"><div class="collapsible-header"><a href="activities.html" class="white-text"> <i class="fa-solid fa-pen white-text"></i>Activities</a></div></li>
+    <li><div class="collapsible-header"><a class="white-text" href="settings.html"><i class="fa-solid fa-gears white-text"></i>Settings</a></div></li>
+    <!-- <li><a class="subheader">Sub Menu</a></li> -->
+  
+  </ul>
+ 
+  <main>
+    <div class="container">
+        <div class="row">
+            <!-- NUMBERS OF TASK -->
+          <div class="col s12">
+            <h2>Activties</h2>
+          </div>
+
+          <div class="col s12 m6 l6">
+              <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header"><i class="fa-solid fa-clipboard-check"></i>Day 1 (Colors and Typography)<span class="new badge  green darken-4" data-badge-caption="Graded"></span></div>
+                  <div class="collapsible-body">
+                    <a class="black-text" href="#" >Bobby Ferrer</a>
+                    <p class="green-text">95/100 points</p>
+                    <span>submit the screenshot of your tasks</span>
+                    <div class="divider"></div>
+                    <a data-target="modal1" class="modal-trigger">View Details</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="fa-solid fa-clipboard-check"></i>Day 2 (Table & Media) <span class="new badge  green darken-4" data-badge-caption="Graded"></span></div>
+                  <div class="collapsible-body">
+                    <a class="black-text" href="#" >Bobby Ferrer</a>
+                    <p class="green-text">100/100 points</p>
+                    <span>submit the screenshot of your tasks</span>
+                    <div class="divider"></div>
+                    <a data-target="modal2" class="modal-trigger">View Details</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="fa-solid fa-clipboard-check"></i>Day 3 (Media) <span class="new badge  green darken-4" data-badge-caption="Graded"></span></div>
+                  <div class="collapsible-body">
+                    <a class="black-text" href="#" >Bobby Ferrer</a>
+                    <p class="green-text">100/100 points</p>
+                    <span>submit the screenshot of your tasks</span>
+                    <div class="divider"></div>
+                    <a data-target="modal3" class="modal-trigger">View Details</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="fa-solid fa-arrow-right"></i>Day 4 (Navbar & Sidenav)<span class="new badge yellow darken-4" data-badge-caption="Turned-in"></span></div>
+                  <div class="collapsible-body">
+                    <a class="black-text" href="#" >Bobby Ferrer</a>
+                    <p class="black-text">100 points</p>
+                    <span>submit the screenshot of your tasks</span>
+                    <div class="divider"></div>
+                    <a data-target="modal4" class="modal-trigger">View Details</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="fa-solid fa-arrow-right"></i> Day 5 (Buttons)<span class="new badge yellow darken-4" data-badge-caption="Turned-in"></span></div>
+                  <div class="collapsible-body">
+                    <a class="black-text" href="#" >Bobby Ferrer</a>
+                    <p class="black-text">100 points</p>
+                    <span>submit the screenshot of your tasks</span>
+                    <div class="divider"></div>
+                    <a data-target="modal5" class="modal-trigger">View Details</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="fa-solid fa-circle-exclamation"></i>Day 6 (Cards)<span class="new badge red" data-badge-caption="Missing"></span></div>
+                  <div class="collapsible-body">
+                    <a class="black-text" href="#" >Bobby Ferrer</a>
+                    <p class="black-text">100 points</p>
+                    <span>submit the screenshot of your tasks</span>
+                    <div class="divider"></div>
+                    <a data-target="modal6" class="modal-trigger">View Details</a>
+                  </div>
+                </li>
+              </ul>
+          </div>
+
+          <div class="col s12 m6 l6">
+            <ul class="collapsible">
+              <li>
+                <div class="collapsible-header"><i class="fa-solid fa-arrow-right"></i>Day 7 (Grid)<span class="new badge yellow darken-4" data-badge-caption="Turned-in"></span></div>
+                <div class="collapsible-body">
+                  <a class="black-text" href="#" >Bobby Ferrer</a>
+                  <p class="black-text">100 points</p>
+                  <span>submit the screenshot of your tasks</span>
+                  <div class="divider"></div>
+                  <a>View Details</a>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="fa-solid fa-arrow-right"></i>Day 8 (Sign up for GitHub and Netlify) <span class="new badge yellow darken-4" data-badge-caption="Turned-in"></span></div>
+                <div class="collapsible-body">
+                  <a class="black-text" href="#" >Bobby Ferrer</a>
+                  <p class="black-text">100 points</p>
+                  <span>submit the screenshot of your tasks</span>
+                  <div class="divider"></div>
+                  <a>View Details</a>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="fa-solid fa-arrow-right"></i>Day 9 (Git and Github Remote Repository Link) <span class="new badge yellow darken-4" data-badge-caption="Turned-in"></span></div>
+                <div class="collapsible-body">
+                  <a class="black-text" href="#" >Bobby Ferrer</a>
+                  <p class="black-text">100 points</p>
+                  <span>submit the screenshot of your tasks</span>
+                  <div class="divider"></div>
+                  <a>View Details</a>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="fa-solid fa-arrow-right"></i>Day 10 (Parallax & Modals)<span class="new badge yellow darken-4" data-badge-caption="Turned-in"></span></div>
+                <div class="collapsible-body">
+                  <a class="black-text" href="#" >Bobby Ferrer</a>
+                  <p class="black-text">100 points</p>
+                  <span>submit the screenshot of your tasks</span>
+                  <div class="divider"></div>
+                  <a>View Details</a>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="fa-solid fa-circle-exclamation"></i> Day 11 (Wire Frame)<span class="new badge red" data-badge-caption="Missing"></span></div>
+                <div class="collapsible-body">
+                  <a class="black-text" href="#" >Bobby Ferrer</a>
+                  <p class="black-text">100 points</p>
+                  <span>submit the screenshot of your tasks</span>
+                  <div class="divider"></div>
+                  <a>View Details</a>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="fa-solid fa-pen"></i>Day 12 (Final Assestment)<span class="new badge light-blue darken-4" data-badge-caption="Assigned"></span></div>
+                <div class="collapsible-body">
+                  <a class="black-text" href="#" >Bobby Ferrer</a>
+                  <p class="black-text">100 points</p>
+                  <div class="divider"></div>
+                  <a data-target="modal12" class="modal-trigger">View Details</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+    </div>
+</main>
+</body>
+
+<!-- MODAL -->
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Day 1 (Colors and Typography) <span class="new badge  green darken-4" data-badge-caption="95/100 points"></span></h4>
+    <h5>Your Work </h5>
+    
+    <div class="divider"></div>
+    <div class="container">
+      <img src="images/TYPOGRAPHY_CANETE_OUTPUT1.png" class="responsive-img"> 
+      <img src="images/TYPOGRAPHY_CANETE_OUTPUT2.png" class="responsive-img"> 
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+  </div>
+</div>
+
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <h4>Day 2 (Table & Media) <span class="new badge  green darken-4" data-badge-caption="100/100 points"></span></h4>
+    <h5>Your Work </h5>
+    
+    <div class="divider"></div>
+    <div class="container">
+      <img src="images/CAÑETE_TABLE1.png" class="responsive-img"> 
+      <img src="images/CANETE_MEDIA3.png" class="responsive-img"> 
+      <img src="images/CAÑETE_SAMPLECODE.png" class="responsive-img"> 
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+  </div>
+</div>
+
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <h4>Day 3 (Media) <span class="new badge  green darken-4" data-badge-caption="100/100 points"></span></h4>
+    <h5>Your Work </h5>
+    
+    <div class="divider"></div>
+    <div class="container">
+      <img src="images/CANETE_MEDIA3.png" class="responsive-img"> 
+      <img src="images/CANETE_MEDIA4.png" class="responsive-img"> 
+      <img src="images/CANETE_MEDIA2.png" class="responsive-img"> 
+      <img src="images/CANETE_MEDIA5_CODE.png" class="responsive-img"> 
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+  </div>
+</div>
+
+<div id="modal4" class="modal">
+  <div class="modal-content">
+    <h4>Day 4 (Navbar & Sidenav) <span class="new badge yellow darken-4" data-badge-caption="Turned-in"></span></h4>
+    <h5>Your Work </h5>
+    
+    <div class="divider"></div>
+    <div class="container">
+      <img src="images/CANETE_SIDEBAR-NAVBAR5.png" class="responsive-img"> 
+      <img src="images/CANETE_SIDEBAR-NAVBAR4.png" class="responsive-img"> 
+      <img src="images/CANETE_SIDEBAR-NAVBAR1.png" class="responsive-img"> 
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+  </div>
+</div>
+
+<div id="modal5" class="modal">
+  <div class="modal-content">
+    <h4>Day 5 (Buttons) <span class="new badge yellow darken-4" data-badge-caption="Turned-in"></span></h4>
+    <h5>Your Work </h5>
+    
+    <div class="divider"></div>
+    <div class="container">
+      <img src="images/CANETE_BUTTONS1.png" class="responsive-img"> 
+      <img src="images/CANETE_BUTTONS2.png" class="responsive-img"> 
+      <img src="images/CANETE_BUTTONS4.png" class="responsive-img">
+      <img src="images/CANETE_BUTTONS5.png" class="responsive-img">  
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+  </div>
+</div>
+
+<div id="modal6" class="modal">
+  <div class="modal-content">
+    <h4>Day 6 (Cards) <span class="new badge red" data-badge-caption="Missing"></span></h4>
+    <h5>Submit your task</h5>
+    <div class="video-container">
+      <iframe width="1536" height="702" src="https://www.youtube.com/embed/LgWIU8m6B48" title="Materialize CSS - Cards" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="divider"></div>
+      <h3></h3>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+  </div>
+</div>
+
+<div id="modal12" class="modal">
+  <div class="modal-content ">
+    <h4>Day 12 (Final Assestment) <span class="new badge red" data-badge-caption="Assigned"></span></h4>
+      <p class="black-text">Batch 9 </p>
+      <p class="black-text">When: November 4, 2023 </p>
+      <p class="black-text"> Time: Start at 7:00AM</p>
+      <p class="black-text">Online Demonstration</p>
+      <p class="black-text">Maximum of 10 minutes per student, please have your portfolio ready!</p>
+      <p class="black-text">Don't forget to send your source code GitHub link portfolio and Netlify link portfolio, send your project URL link here in our LMS. Good luck </p>
+    <div class="divider"></div>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+  </div>
+</div>
+
+
+
+
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m4 l4">
+        <img class="materialize-logo" src="//themes.materializecss.com/cdn/shop/t/1/assets/materialize-logo.png?v=179096390591197713681528499937" alt="Materialize">
+        <p>Made with love by Pearl and Materialze.</p>
+      </div>
+      <div class="col s12 m4 l4">
+        <h5>About</h5>
+        <ul>
+          <p>The information on this website is for assesstment informational purposes only.</p>
+        </ul>
+      </div>
+      <div class="col s12 m4 l4">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="https://twitter.com/canetepearl">Twitter</a></li>
+          <li><a href="https://web.facebook.com/CheedCanete/">Facebook</a></li>
+          <li><a href="https://github.com/Pearl0618">Github</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+   
+      $(document).ready(function(){
+        $('.tabs').tabs();
+        $('.sidenav').sidenav({ });
+        $(".dropdown-trigger").dropdown();
+        $('.modal').modal();
+        $('.collapsible').collapsible();
+});
+    </script>
+</html>

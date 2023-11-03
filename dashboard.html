@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/ce896e89d2.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Materialize-->
+        <link href="//themes.materializecss.com/cdn/shop/t/1/assets/admin-materialize.min.css?v=88505356707424191531528497992" rel="stylesheet">
+        <title>DASHBOARD</title>
+    </head>
+
+<body class="has-fixed-sidenav">
+        <!-- NAVRBAR -->
+  <header>
+    <div class="navbar-fixed">
+      <nav class="navbar white">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo " style="margin-top: 5px;"><img src="images/LOGO.png" alt=""></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a class="dropdown-trigger" data-target="dropdown2" href="#"><i class="fa-solid fa-bell blue-text"></i></a></li>
+              <ul id="dropdown2" class="dropdown-content">
+                <!-- <li><a href="#!">New Message</a></li>
+                <li><a href="#!"></i>Deadline of Submission</a></li> -->
+                <li><a href="#!">New Message<span class="new badge">4</span></a></li>
+                <li><a href="#!">Deadline of Submission<span class="new badge red">1</span></a></li>
+              </ul>
+              <ul id="dropdown1" class="dropdown-content">
+                <li><a target="_blank" href="settings.html">Setings</a></li>
+                <li><a href="index.html">Logout</a></li>
+              </ul>
+              <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"> <i class="fa-solid fa-user blue-text"></i></li>
+            </ul>
+            <a href="" class="sidenav-trigger" data-target="mobile-demo"><i class="fa-solid fa-bars blue-text"></i></a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <ul class="sidenav sidenav-fixed blue s6 m3 l3" id="mobile-demo"  style="background-color: #343a40;">
+    <li>
+      <div class="user-view">
+        <!-- <div class="background">
+          <img src="images/office2.jpg">
+        </div> -->
+          <a href="#user"><img class="circle" src="images/pearl.png"></a>
+          <a href="#name"><span class="name white-text">Pearl Cheed</span></a>
+          <a href="#email"><span class="email white-text">canetepearlcheed@gmail.com</span></a>
+      </div>
+    </li>
+    <li><div class="divider"></div></li>
+    <li class="active"><div class="collapsible-header"><a href="dashboard.html" class="white-text" type="submit"> <i class="fa-solid fa-gauge white-text"></i>Dashboard</a></div></li>
+    <li ><div class="collapsible-header"><a href="profile.html" class="white-text" type="submit"> <i class="fa-regular fa-user white-text"></i>Profile</a></div></li>
+    <li><div class="collapsible-header"><a href="activities.html" class="white-text"> <i class="fa-solid fa-pen white-text"></i>Activities</a></div></li>
+    <li><div class="collapsible-header"><a class="white-text" href="settings.html"><i class="fa-solid fa-gears white-text"></i>Settings</a></div></li>
+    <!-- <li><a class="subheader">Sub Menu</a></li> -->
+  
+  </ul>
+  <main>
+    
+    <div class="container">
+        <div class="row">
+            <!-- NUMBERS OF TASK -->
+          <div class="col s12">
+            <h2>Dashboard</h2>
+          </div>
+
+          <div class="col s12 m6 l3">
+            <div class="card-panel light-blue darken-4 white-text">
+                <h2 class="text-center"><i class="small fa-solid fa-pen"></i>  12</h2>
+                    <a class="white-text">Assigned Task</a>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l3">
+            <div class="card-panel yellow darken-4 white-text">
+                <h2 class="text-center"> <i class="small fa-solid fa-arrow-right"></i>  6</h2>
+                    <a class="white-text">Turned-in Task</a>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l3">
+            <div class="card-panel red darken-4 white-text">
+                <h2 class="text-center"><i class="small fa-solid fa-circle-exclamation"></i>  2</h2>
+                    <a class="white-text">Missing Task</a>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l3">
+            <div class="card-panel green darken-4 white-text">
+                <h2 class="text-center"> <i class="small fa-solid fa-clipboard-check"></i>  3</h2>
+                    <a class="white-text">Graded Task</a>
+            </div>
+          </div>
+      </div>
+    </div>
+<!-- ABOUT THE ENROLLED SUBJECT -->
+    <div class="container">
+      <div class="row">
+        <!-- SUBJECT -->
+        <div class="col s12 m3 l3">
+          <div class="card-panel">
+              <span>Enrolled Subject:</span>
+                <h6>CREATIVE WEB DESIGN (BATCH 9)</h6>
+                  <img class="responsive-img" src="images/CWD.jpg" alt="">
+                  <br>
+                  <br>
+              <span>Trainer:</span>  
+                <h6>BOBBY FERRER</h6>
+          </div>
+        </div>
+        <!-- ANNOUNCE  -->
+        <div class="col s12 m6 l6">
+          <div class="card-panel">
+            <div class="row">
+              <div class="col s3">
+                <img src="images/pearl.png" alt="" class="circle responsive-img">
+                <a href="#">  Pearl Cheed</a>
+              </div>
+              <div class="col s9">
+                <textarea name="" id="" cols="60" rows="10" placeholder="Announce something to your class"></textarea>
+                <br>
+                <a data-target="modal3" class="modal-trigger"><i class="fa-solid fa-pen-to-square right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="card-panel grey lighten-5 z-depth-1">
+            <div class="row">
+              <div class="col s2">
+                <img src="images/bobbyferrer.jpg" alt="" class="circle responsive-img"> 
+                <a href="#">Bobby Ferrer</a>
+              </div>
+              <div class="col s10">
+                <h6>Google Meet</h6>
+                <a class="black-text">
+                  Here's the Gmeet link https://meet.google.com/daq-qoej-twq
+                </a>
+                <br>
+                <a data-target="modal5" class="modal-trigger">See More Info..</a>
+              </div>
+            </div>
+        </div>
+          <div class="card-panel grey lighten-5 z-depth-1">
+                <div class="row">
+                  <div class="col s2">
+                    <img src="images/bobbyferrer.jpg" alt="" class="circle responsive-img"> 
+                    <a href="#">Bobby Ferrer</a>
+                  </div>
+                  <div class="col s10">
+                    <h6>Institutional Assestment Batch 9</h6>
+                    <a class="black-text">
+                      November 4, 2023 | 7:00AM
+                      Maximum of 10 minutes per each student, please prepare your portfolio ready.
+                    </a>
+                    <br>
+                    <a data-target="modal1" class="modal-trigger">See More Info..</a>
+                  </div>
+                </div>
+            </div>
+            <div class="card-panel grey lighten-5 z-depth-1">
+              <div class="row">
+                <div class="col s2">
+                  <img src="images/telecall.jpg" alt="" class="circle responsive-img"> 
+                  <a href="#">Telecall</a>
+                </div>
+                <div class="col s10">
+                  <h6>INITIAL ALLOWANCE DISTRIBUTION</h6>
+                  <a class="black-text">
+                    TOMORROW TUESDAY 1:00PM (OCT 24, 2023) at TeleCall Office. 
+                  </a>
+                  <br>
+                  <a data-target="modal2" class="modal-trigger">See More Info..</a>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="col s12 m3 l3">
+           <div class="card-panel">
+              <span style="color: red;">Due today: </span>
+              <h6>Day 11 (Wire Frame)</h6>
+              <br>
+              <a  class="waves-effect waves-light btn" href="#">Turn-in</a>
+          </div>
+        </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- MODAL -->
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Institutional Assestment Batch 9</h4>
+    <h5>Online Demonstration | November 4, 2023 | 7:00AM</h5>
+    <div class="divider"></div>
+    <p class="black-text">Maximum of 10 minutes per each student, please prepare your portfolio ready.
+
+      Don't forget to send your source code GitHub link portfolio and Netlify link portfolio.
+    </p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+  </div>
+</div>
+
+<div id="modal5" class="modal">
+  <div class="modal-content">
+    <h4>Google Meet</h4>
+    <h5>November 4, 2023 | 7:00AM - 1:30PM</h5>
+    <div class="divider"></div>
+    <p class="black-text">  Here's the Gmeet link https://meet.google.com/daq-qoej-twq</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+  </div>
+</div>
+
+<div id="modal4" class="modal">
+  <div class="modal-content">
+    <h4>Institutional Assestment Batch 9</h4>
+    <h5>Online Demonstration | November 4, 2023 | 7:00AM</h5>
+    <div class="divider"></div>
+    <p class="black-text">Maximum of 10 minutes per each student, please prepare your portfolio ready.
+
+      Don't forget to send your source code GitHub link portfolio and Netlify link portfolio.
+    </p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+  </div>
+</div>
+
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <h4>INITIAL ALLOWANCE DISTRIBUTION</h4>
+    <h5>1:00PM (OCT 24, 2023) at TeleCall Office</h5>
+    <div class="divider"></div>
+    <p class="black-text">Total of 15 batches will be here tomorrow 
+      "SO PLEASE BE PATIENT". </p>
+      <p class="black-text">
+      For those who are not available tomorrow to claim their allowances and para po dun sa malalayo ipakisuyo nyo nlng po sa family or kabatchmate or kakakilala nyo make sure na may AUTHORIZATION LETTER na nakasulat po yung name ng kukuha ng allowances nyo dapat po nakasulat sa bond paper, VALID ID ng kukuha at valid id ng trainee with 3 signature both dapat po original signature. Thank you!!!</p>
+      <p class="black-text">NOTE: Please bring the HARD COPY of REQUIREMENTS!! NO REQUIREMENTS NO ALLOWANCES</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+  </div>
+</div>
+
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <div class="container">
+      <div class="row">
+        <div class="col s3">
+          <img src="images/pearl.png" alt="" class="circle responsive-img">
+        </div>
+        <div class="col s9">
+          <textarea name="" id="" cols="100" rows="10000" placeholder="Announce something to your class" style="width: 507px; height: 108px;"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Post</a>
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+  </div>
+</div>
+  
+</body>
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m4 l4">
+        <img class="materialize-logo" src="//themes.materializecss.com/cdn/shop/t/1/assets/materialize-logo.png?v=179096390591197713681528499937" alt="Materialize">
+        <p>Made with love by Pearl and Materialze.</p>
+      </div>
+      <div class="col s12 m4 l4">
+        <h5>About</h5>
+        <ul>
+          <p>The information on this website is for assesstment informational purposes only.</p>
+        </ul>
+      </div>
+      <div class="col s12 m4 l4">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="https://twitter.com/canetepearl">Twitter</a></li>
+          <li><a href="https://web.facebook.com/CheedCanete/">Facebook</a></li>
+          <li><a href="https://github.com/Pearl0618">Github</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+   
+      $(document).ready(function(){
+        $('.tabs').tabs();
+        $('.sidenav').sidenav({ });
+        $(".dropdown-trigger").dropdown();
+        $('.modal').modal();
+});
+    </script>
+</html>
